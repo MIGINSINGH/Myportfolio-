@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0c1022;
+}
+.navbar{
+    margin-left: 65%;
+    margin-top: 20px;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: 0.5s;
+    opacity: 1;
+    animation: slidetop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.header h1 {
+    color: rgb(15, 178, 207);
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    opacity: 1;
+    animation: slidebottom 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.header h2 {
+    color: rgb(61, 222, 16);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 1;
+    animation: slidebottom 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+h6{
+    font-size: 30px;
+    margin-top: 25px;
+    text-align: center;
+    color: rgb(255, 234, 0);
+}
+.container img{
+    height: 300px;
+    width: 300px;
+    padding-left: 40%;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+.container p{
+    font-size: 20px;
+    color: white;
+    /* padding: 20px; */
+    margin-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+    /* text-align: center; */
+}
+
+.container2 img{
+    height: 300px;
+    width: 300px;
+    padding-left: 40%;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+.container2 p{
+    font-size: 20px;
+    color: white;
+    /* padding: 20px; */
+    margin-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+    /* text-align: center; */
+}
+@media screen and (min-width:350px) and (max-width:730px){
+    .navbar a{
+        font-size: 15px;
+        flex-direction: row;
+        margin-left: 0px;
+        margin-right: 15px;
+       }
+       .navbar{
+        margin-top: 10px;
+        margin-left: 35px;
+        padding: 0px;
+        opacity: 0;
+        animation: slidemain 5s ease forwards;
+       }
+         
+    .header {
+        margin-top: 20px;
+}
+.header h1 {
+font-size: 30px;
+}
+.header h2{
+    font-size: 25px;
+    margin-left: 10px;
+}
+h6{
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+    color: rgb(255, 234, 0);
+}
+
+.container img{
+    height: 200px;
+    width: 200px;
+    padding-left: 20%;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.container p{
+    font-size: 20px;
+    color: white;
+    /* padding: 20px; */
+    margin-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    /* text-align: center; */
+}
+
+.container2 img{
+    height: 200px;
+    width: 200px;
+    padding-left:20%;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.container2 p{
+    font-size: 20px;
+    color: white;
+    /* padding: 20px; */
+    margin-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    /* text-align: center; */
+}
+    }
+    
+@keyframes slidemain {
+    0% {
+        opacity: 0;
+        transform: scale(50%,20%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: transform(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotatex(360deg);
+    }
+}

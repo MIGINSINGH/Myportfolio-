@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #0c1022;
+
+}
+.navbar{
+    margin-left: 65%;
+    margin-top: 20px;
+   
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: 0.5s;
+    opacity: 0;
+    animation: slidetop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.header {
+    margin: 50px;
+}
+
+.header h1 {
+    color: rgb(15, 178, 207);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+}
+
+.contain {
+    display: flex;
+    width: 90%;
+}
+
+.box img {
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 50%;
+    border-radius: 20px;
+    opacity: 0;
+    animation: slideright 1s ease forwards;
+    animation-delay: 1.3s;
+
+}
+
+.container h2 {
+    color: green;
+    margin: 10px 0 0 25%;
+    font-size: 30px;
+    opacity: 0;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 1.3s;
+
+}
+
+.container span {
+    color: rgb(236, 132, 236);
+    font-size: 35px;
+    text-align: center;
+    opacity: 0;
+    animation: slideright 1s ease forwards;
+    animation-delay: 1.8s;
+}
+
+.container h4 {
+    color: green;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0 0 0%;
+    opacity: 0;
+    animation: slideright 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.container p {
+    font-size: 20px;
+    color: white;
+    margin: 25px 50px 0 15%;
+    width: 70%;
+    padding: 0 0 0 10%;
+    text-align: justify;
+    line-height: 30px;
+    opacity: 0;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 2.4s;
+}
+
+.end {
+    padding: 50px;
+    margin-left: 30px;
+}
+
+.end button {
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    border-radius: 20px;
+    border: 0;
+    margin-left: 65%;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+    animation-delay: 1.8s;
+}
+
+.end button:hover {
+    cursor: pointer;
+    color: black;
+    background: linear-gradient(45deg, #f06, #007cb9);
+    transition: all 0.5s linear 0.3s;
+}
+
+.pre {
+    height: 25px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 5%;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    border-radius: 20px;
+    border: 0;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+    animation-delay: 1.8s;
+}
+
+.pre:hover {
+    color: black;
+    background: linear-gradient(45deg, #f06, #007cb9);
+    transition: all 0.5s linear 0.3s;
+}
+
+@keyframes slidetop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideright {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideleft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@media screen and (min-width:350px) and (max-width:730px){
+    .header {
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+.header h1 {
+font-size: 30px;
+}
+.navbar a{
+    font-size: 15px;
+    flex-direction: row;
+    margin-left: 0px;
+    margin-right: 15px;
+   }
+   .navbar{
+    margin-top: 10px;
+    margin-left: 35px;
+    padding: 0px;
+    opacity: 0;
+    animation: slidemain 5s ease forwards;
+   }
+
+.box img {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 70px;
+    opacity: 0;
+    animation: slidecross 2s ease forwards;
+}
+.contain {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.container h2{
+    margin-left: 10px;
+}
+.container span{
+    font-size: 24px;
+}
+.container h4{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.container p{
+    font-size: 15px;
+    margin-left: -10px;
+    width: 90%;
+}
+.pre{
+    font-size: 13px;
+    height: 15px;
+    width: 100px;
+    margin-left: -70px;
+}
+.end button{
+    font-size: 15px;
+    height: 35px;
+    width: 100px;
+    margin-top: -20px;
+    margin-left: 65px;
+    font-family: 'Times New Roman', Times, serif;
+}
+}
+@keyframes slidecross {
+    0% {
+        opacity: 1;
+        transform: translate(300px) rotate(180deg)
+    
+}
+
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+@keyframes slidemain {
+    0% {
+        opacity: 0;
+        transform: scale(50%,20%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: transform(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotatex(360deg);
+    }
+}
